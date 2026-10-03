@@ -419,7 +419,8 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         method: 'POST',
         body: JSON.stringify(data),
       });
-      return loadManagedUsers();
+      await loadManagedUsers();
+      return true;
     } catch (error) {
       if (error instanceof Error && 'status' in error && error.status === 401) logout();
       setApiError(error instanceof Error ? error.message : 'No fue posible crear el usuario.');
@@ -446,7 +447,8 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const currentUser = await apiRequest<ApiUser>('/auth/me', token);
         setUser(currentUser);
       }
-      return loadManagedUsers();
+      await loadManagedUsers();
+      return true;
     } catch (error) {
       if (error instanceof Error && 'status' in error && error.status === 401) logout();
       setApiError(error instanceof Error ? error.message : 'No fue posible actualizar el usuario.');

@@ -13,3 +13,5 @@ Requisitos: Node.js y la API iniciada y configurada. Desde esta carpeta:
 5. Inicia sesión con una cuenta creada en la API.
 
 Los KPIs, mediciones, tareas, planes, alertas y evidencias se consultan en la API. Las evidencias requieren que Google Drive esté configurado en el servidor. La importación masiva y la restauración de datos de demostración requieren endpoints que la API todavía no expone.
+
+Los usuarios con rol `ADMIN` pueden abrir la sección **Usuarios** para crear cuentas y actualizar nombres, roles o estado de acceso. La API no permite modificar el rol o desactivar la cuenta propia desde esa pantalla.

@@ -241,27 +241,20 @@ function AppContent() {
               G
             </div>
             <span className="font-bold text-slate-800">
-              Gran Central de Abastos del Caribe S.A. · Granabastos
+              Granabastos S.A.
             </span>
             <span className="text-slate-300">|</span>
             <span className="text-emerald-800 font-semibold">Plan Estratégico 2024 - 2028</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-4 text-slate-500 text-[11px]">
-            <a
-              href={googleDriveFolder}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-emerald-700 hover:underline font-semibold"
-            >
-              <FolderOpen className="w-3.5 h-3.5" />
-              <span>Carpeta Drive de Evidencias</span>
-            </a>
             <span className="flex items-center gap-1">
               <Shield className="w-3.5 h-3.5 text-emerald-600" />
               <span>Power BI & SGC</span>
             </span>
-            <span className="font-mono">sec_gerencia@granabastos.com.co</span>
+            <span className="font-mono">
+              © {new Date().getFullYear()} Cran Central de Abastos del Caribe S.A. Todos los derechos reservados.
+            </span>
           </div>
         </div>
       </footer>
